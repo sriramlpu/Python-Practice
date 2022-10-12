@@ -1,0 +1,20 @@
+********DAY 2********
+Python coding question:
+LESSER OF TWO EVENS: Write a function that returns the lesser of two given numbers if both numbers are even, but returns the greater if one or both numbers are odd.
+Desired output:
+lesser_of_two_evens(2,4)---> 2
+lesser_of_two_evens(2,3)---> 3
+lesser_of_two_evens(3,4)---> 4
+
+--------------------------------------------------------
+
+def sol(l,h):
+    if l%2 == 0 and h%2 == 0:
+        return min(l,h)
+    else:
+        return max(l,h)
+
+
+print(sol(2,4))
+print(sol(2,3))
+print(sol(3,4))
