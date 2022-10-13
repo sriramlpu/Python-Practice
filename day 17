@@ -1,0 +1,11 @@
+********DAY 17********
+Python coding question:
+
+Use a List Comprehension to create a list of all numbers between 1 and 50 that are divisible by 3.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+def myfunc(l):
+    result = [i for i in range(1,l+1) if i%3 == 0]
+    return result
+
+print(myfunc(50))
