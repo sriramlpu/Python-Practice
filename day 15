@@ -1,0 +1,19 @@
+********DAY 15********
+Python coding question:
+
+Print only the words that start with "s" in a sentence.
+
+Input:
+Salad is healthy snack.
+
+Output:
+Salad
+snack
+
+-------------------------------------------------------------------------------------------------
+
+l = input().split()
+
+for i in l:
+    if i[0].lower() == 's':
+        print(i)
