@@ -1,0 +1,25 @@
+********DAY 13********
+Python coding question:
+Write a function that capitalizes the first and fourth letters of a name.
+
+TC 1:capitalize("chandrali")
+  'ChaNdrali'
+TC 2:capitalize("roy")
+   'Name is too short!'
+
+----------------------------------------------------------------------------
+
+
+import string
+def capitalize(l):
+    if len(l) > 3:
+        first_word = l[0:3].capitalize()
+        second_word = l[3:].capitalize()
+        result = first_word + second_word
+        return result
+    else:
+        return 'Name is too short!'
+    
+
+print(capitalize("chandrali"))
+print(capitalize("roy"))
