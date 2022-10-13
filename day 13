@@ -9,8 +9,6 @@ TC 2:capitalize("roy")
 
 ----------------------------------------------------------------------------
 
-
-import string
 def capitalize(l):
     if len(l) > 3:
         first_word = l[0:3].capitalize()
