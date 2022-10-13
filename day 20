@@ -8,13 +8,13 @@ For example, if the function gets sent "4444444444444444", then it should return
 -----------------------------------------------------------------------------------------------------------------------------------
 
 def myfunc(l):
-    h = len(l)
-    s = l[h-4:]
-    s1 = h-len(s)
+    length_of_string = len(l)
+    last_four_digits = l[length_of_string-4:]
+    masked_digit_length = length_of_string-len(last_four_digits)
     credit_card_number = ''
-    for i in l[:s1]:
+    for i in l[:masked_digit_length]:
         credit_card_number += '*'
-    return credit_card_number+s
+    return credit_card_number+last_four_digits
     
 print(myfunc("4444444444444444"))
 print(myfunc("9189483076148598"))
