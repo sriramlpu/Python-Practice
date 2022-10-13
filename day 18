@@ -1,0 +1,19 @@
+********DAY 18********
+Python coding question:
+
+Given an integer n, return True if n is within 10 of either 100 or 200.
+abs(90)--True
+abs(220)--False
+
+-------------------------------------------------------------------------------------------------------------------
+
+def myfunc(l):
+    if abs(l-100) <= 10 or abs(l-200) <= 10:
+        return True
+    else:
+        return False
+
+print(myfunc(90))
+print(myfunc(220))
+print(myfunc(10))
+print(myfunc(190))
