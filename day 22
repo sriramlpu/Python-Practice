@@ -1,0 +1,18 @@
+********DAY 22********
+Python coding question:
+
+Write a function in Python that accepts a list of any length that contains a mix of non-negative integers and strings.
+The function should return a list with only the integers in the original list in the same order.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+def myfunc(l):
+    int_list = []
+    for i in l:
+        
+        if isinstance(i, int):
+            if i>=0:
+                int_list.append(i)
+    return int_list
+l = [123,'axs',-98,'gg','ccc','yh','ghhgj',-78,'5',7]
+print(myfunc(l))--> above solution return new list
