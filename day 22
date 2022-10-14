@@ -15,4 +15,17 @@ def myfunc(l):
                 int_list.append(i)
     return int_list
 l = [123,'axs',-98,'gg','ccc','yh','ghhgj',-78,'5',7]
-print(myfunc(l))--> above solution return new list
+print(myfunc(l)) #above solution return new list
+
+---------------------------------------------------------------------------------------------------------------
+def listorders(lst):
+  i = 0
+  while(i<len(lst)):
+    if type(lst[i]) != int:
+      lst.pop(i) 
+      i -= 1
+    i += 1
+  return lst
+   
+l1=['a',1,2,5,'what',10,20,'string','aman','5',4]
+print(listorders(l1)) #return same list
