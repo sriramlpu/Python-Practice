@@ -1,0 +1,21 @@
+********DAY 21********
+Python coding question:
+
+Write a Python code to accept a string and count the number of vowels and consonants.
+Print them separately.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+def myfunc(l):
+    vowels = ['a','e','i','o','u']
+    num_of_vowels = 0
+    num_of_consonants = 0
+    for i in l:
+        if i.lower() in vowels:
+            num_of_vowels += 1
+        else:
+            num_of_consonants += 1
+    return num_of_vowels, num_of_consonants ------ it returns tuple
+l = input()
+print('number of vowels {}'.format(myfunc(l)[0]))
+print('number of consonants {}'.format(myfunc(l)[1]))
