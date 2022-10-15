@@ -1,0 +1,14 @@
+********DAY 23********
+Python coding question:
+
+Write a program to find how many times substring “Emma” appears in the given string.
+input:
+str = "Emma is good developer. Emma is a writer"
+Output:
+Emma appeared 2 times
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+l = "Emma is good developer. Emma is a writer".split()
+no_of = l.count('Emma')
+print(no_of)
