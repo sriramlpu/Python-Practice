@@ -11,4 +11,4 @@ Emma appeared 2 times
 
 l = "Emma is good developer. Emma is a writer".split()
 no_of = l.count('Emma')
-print(no_of)
+print('Emma appeared {} times'.format(no_of))
