@@ -1,0 +1,20 @@
+********DAY 28********
+Python coding question:
+
+Given a sentence or cluster of words, find out if there are any integers inside the string. Print out the total number of integers. 
+If there’s at least 1 integer present, find the sum of all of the integers found and print out the sum.
+
+For example:
+If string = “200 plus 500 is equal to”
+2 integers found
+sum: 700
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+n = input().split()
+sum = 0
+for i in n:
+    if i.isdigit():
+        sum += int(i)
+print(sum)
