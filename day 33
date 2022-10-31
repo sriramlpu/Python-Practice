@@ -1,0 +1,22 @@
+********DAY 33********
+Python coding question:
+
+Write a function in Python to check duplicate letters. It must accept a string, i.e., a sentence. 
+The function should return True if the sentence has any word with duplicate letters, else return False. 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+def duplicate_check(n):
+    for i in n.split():
+        lis = []
+        for j in i:
+            if j in lis:
+                return True
+            else:
+                lis.append(j)
+    return False
+    
+
+print(duplicate_check('sai ramm'))
