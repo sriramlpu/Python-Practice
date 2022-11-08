@@ -17,6 +17,7 @@ def divisible_by_b(a, b):
  next_multiplier_by_b = (a // b) + 1
  print(next_multiplier_by_b)
  return b * next_multiplier_by_b
+ 
 
 out = divisible_by_b(17, 8)
 print(f"The next great number divisible by b: {out}")
